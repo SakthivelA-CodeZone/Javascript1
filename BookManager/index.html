@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Book Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+
+  <div class="navbar">
+    <h2>Book Manager</h2>
+
+  </div>
+
+  <div class="container1">
+  <div class="bookcontainer" >
+  <h3>Think and grow rich</h3>
+  <h5> by Napoleon Hill</h3>
+  <p style="font-size: 13px;margin-top: 5px;">Think and Grow Rich is a personal development and self-help book written by Napoleon Hill and published in 1937. The book outlines principles for achieving success and wealth, based on Hill's study of successful individuals of his time. It emphasizes the power of thoughts, beliefs, and persistence in attaining one's goals.</p>
+  <button onclick="del(event)" style="padding: 5px;margin-top: 8px; font-size: 13px; border-color:  black ;" >Remove</button>
+  </div>
+  
+  </div>
+
+
+   <div class="overlay"></div>
+   
+   
+   <div class="popup" >
+    <h2>Add Book</h2>
+    <form>
+      <input type="text" placeholder="Book Title" id="booktitle" >
+      <input type="text" placeholder="Book Author" id="Author">
+      <textarea id="area"  placeholder="Short description"></textarea>
+      <button id="Add">Add</button>
+      <button id="Cancel" >Cancel</button>
+    </form>
+   </div>
+  
+  
+   <button  id="bbton">+</button>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
