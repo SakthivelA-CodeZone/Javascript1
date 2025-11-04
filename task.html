@@ -1,0 +1,30 @@
+<input placeholder="num1"id="num1" >
+<input placeholder="num2" id="num2" ><br>
+<hr>
+<button id="total" onclick="add()" >Total</button>
+<p id="result"  >RESULT</p>
+<script>
+ var value1 = document.getElementById("num1");
+ var value2 = document.getElementById("num2");
+ 
+
+ 
+
+ function add(){
+ var total =Number(value1.value)+Number(value2.value);
+ var final=document.getElementById("result");
+ final.textContent=total;
+ }
+ </script>
+
+
+
+
+<h2>Random Number</h2>
+
+
+<script>
+  var ran=Math.random()
+  console.log(ran)
+</script>
+

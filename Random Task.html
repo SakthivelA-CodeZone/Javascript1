@@ -1,0 +1,41 @@
+<h2>Guessing Number Game</h2>
+<h3>Choose between 1 to 10 </h3>
+<input placeholder="Enter your guess" id="input" >
+<button id="submit"onclick="check()" >Submit</button>
+<p id="Result">Guess wrong/Right:</p>
+<p id="score">Your score is : 10</p>
+
+<script>
+  var num=document.getElementById("input")
+  var presult=document.getElementById("Result")
+  var pscore=document.getElementById("score")
+
+
+  var ran=Math.floor(Math.random()*10)+1
+  
+
+ function  check(){
+  var enternum=num
+  if(ran==enternum){
+   
+   presult.textContent="Right"
+   alert("You won")
+   
+   pscore.textContent="Your score is:10"
+
+  }
+   
+ 
+ else{
+  
+  presult.textContent="Wrong"
+  alert("You Lose")
+  score -= 1
+  pscore.textContent="Your score is: 0" 
+ 
+ }
+
+
+}
+
+</script>

@@ -1,0 +1,38 @@
+<style>
+  #Hello h1 {
+    color: blue;
+    font-size: 50px;
+    transition: 24s;
+  }
+
+  .heightmax {
+    height: 500px;
+  
+  }
+
+</style>
+
+<div id="Hello">
+  <h1>Hello World</h1>
+</div>
+<button id="but" onclick="changeStyle()">Change Style</button>
+
+<script>
+ var con=document.getElementById("Hello");
+ var but=document.getElementById("but");
+
+ function changeStyle(){
+  con.style.backgroundColor="black";
+  con.style.textAlign="center";
+  con.style.border="2px solid red";
+   con.style.fontSize="100px"
+   but.style.color="green"
+   but.style.fontSize="30px"
+   but.style.textAlign="center"
+   but.style.padding="10px"
+   but.textContent="Style Changed"
+   
+   
+   con.setAttribute("class","heightmax")
+ }
+</script>

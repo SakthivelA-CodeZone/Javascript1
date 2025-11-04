@@ -1,0 +1,38 @@
+<h1 id="title">This is a heading</h1>
+<button onclick="change()">change </button><br>
+<hr>
+<input placeholder="num1"id="num1" >
+<input placeholder="num2" id="num2" >
+<button id="total" onclick="add()" >Total</button>
+<p id="result"  >RESULT</p>
+<script>
+  var heading=document.getElementById("title")
+  console.log(heading.textContent);
+
+
+function change(){
+    heading.textContent="Text changed successfully";
+ }
+
+ var value1 = document.getElementById("num1");
+ var value2 = document.getElementById("num2");
+ 
+
+ 
+
+ function add(){
+ var total =Number(value1.value)+Number(value2.value);
+ var final=document.getElementById("result");
+ final.textContent=total;
+ }
+
+
+
+
+
+
+
+
+</script>
+
+
